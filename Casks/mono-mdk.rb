@@ -1,12 +1,11 @@
 cask 'mono-mdk' do
-  version '5.10.0.140'
-  sha256 '78d979d1264840ccdd4ab8809bb746b621dcda248aec01a465eb20ce782f4e9d'
+  version '5.16.0.179'
+  sha256 'debf8f09d694290aea7f74700a6c7528319b196400ad2d3704386bc093deb4da'
 
   url "https://download.mono-project.com/archive/#{version.major_minor_patch}/macos-10-universal/MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
-  appcast 'https://xampubdl.blob.core.windows.net/static/installer_assets/v3/Mac/Universal/InstallationManifest.xml',
-          checkpoint: 'dd09818c71e94eaf058af709a4d12795667d626973dbaeab18bb7314c5c5e5ab'
+  appcast 'https://www.mono-project.com/download/stable/'
   name 'Mono'
-  homepage 'http://www.mono-project.com/'
+  homepage 'https://www.mono-project.com/'
 
   pkg "MonoFramework-MDK-#{version}.macos10.xamarin.universal.pkg"
 

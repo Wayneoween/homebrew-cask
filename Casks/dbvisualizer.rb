@@ -1,6 +1,6 @@
 cask 'dbvisualizer' do
-  version '10.0.2'
-  sha256 '4da3c2786e852233ad124145121df42e3949a7446ca4e937decd5b959c9823aa'
+  version '10.0.15'
+  sha256 '1d9db45398f7e730ee9a53df793f5cef9d49dbb94827fc26d71490cd3cdc3fd3'
 
   url "https://www.dbvis.com/product_download/dbvis-#{version}/media/dbvis_macos_#{version.dots_to_underscores}.dmg"
   name 'DbVisualizer'
@@ -17,6 +17,6 @@ cask 'dbvisualizer' do
   zap trash: '~/.dbvis'
 
   caveats do
-    depends_on_java('8')
+    depends_on_java '8'
   end
 end

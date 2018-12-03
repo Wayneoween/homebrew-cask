@@ -1,8 +1,8 @@
 cask 'ultimaker-cura' do
-  version '3.2.1'
-  sha256 '162554f2784d8a44b2d8a5fb9827a6cae6009582484d10feb9f8f1217598c8a1'
+  version '3.6.0'
+  sha256 'de47b3969f7cf77e3c6acc87d3c09420d88fe3815178e38d8f030642573486a0'
 
-  url "https://software.ultimaker.com/current/Ultimaker%20Cura-#{version}-Darwin.dmg"
+  url "https://download.ultimaker.com/cura/Ultimaker_Cura-#{version}-Darwin.dmg"
   name 'Ultimaker Cura'
   name 'Cura'
   homepage 'https://ultimaker.com/en/products/cura-software'

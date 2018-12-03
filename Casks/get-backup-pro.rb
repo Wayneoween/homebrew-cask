@@ -1,13 +1,14 @@
 cask 'get-backup-pro' do
-  version '3.4.2'
-  sha256 '01d7e4bd623ed7b079ec8bf0c38a418675e50de8396dfc3a453270c7a33dceeb'
+  version '3.4.8'
+  sha256 '85e1f00184281325212ce5ca71c9f4948df4c7f0fbd37cb3a738d7fa50b355e2'
 
   # belightsoft.s3.amazonaws.com/updates was verified as official when first introduced to the cask
   url "https://belightsoft.s3.amazonaws.com/updates/Get+Backup+Pro+#{version.major}.zip"
-  appcast "https://www.belightsoft.com/download/updates/appcast_getbackup_pro#{version.major}.xml",
-          checkpoint: 'd7762347d2ff3c6995fbf00ad36c7409126faad67706ccb17911bb6a55eeebaa'
+  appcast "https://www.belightsoft.com/download/updates/appcast_getbackup_pro#{version.major}.xml"
   name "Get Backup Pro #{version.major}"
   homepage 'https://www.belightsoft.com/products/getbackup/'
+
+  auto_updates true
 
   app "Get Backup Pro #{version.major}.app"
 end

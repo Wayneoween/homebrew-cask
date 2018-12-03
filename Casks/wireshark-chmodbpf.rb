@@ -1,10 +1,9 @@
 cask 'wireshark-chmodbpf' do
-  version '2.4.5'
-  sha256 '028592817849f180f4014288a9566910e4ab508cb3b53a9721c9c667379acd15'
+  version '2.6.5'
+  sha256 'b4e2cb6c9ddb0f700ef8eaba9f19248f92069a27622620646f46640e294c678f'
 
   url "https://www.wireshark.org/download/osx/Wireshark%20#{version}%20Intel%2064.dmg"
-  appcast 'https://www.wireshark.org/download/osx/',
-          checkpoint: 'd7e3d149e596bc245ecda422f1ad7114a58d09da9167ab622f9d593f92fef11c'
+  appcast 'https://www.wireshark.org/download/osx/'
   name 'Wireshark-ChmodBPF'
   homepage 'https://www.wireshark.org/'
 
@@ -29,17 +28,6 @@ cask 'wireshark-chmodbpf' do
                    'attributeSetting' => 0,
                  },
                ]
-
-  postflight do
-    system_command '/usr/sbin/dseditgroup',
-                   args: [
-                           '-o', 'edit',
-                           '-a', Etc.getpwuid(Process.euid).name,
-                           '-t', 'user',
-                           '--', 'access_bpf'
-                         ],
-                   sudo: true
-  end
 
   uninstall_preflight do
     set_ownership '/Library/Application Support/Wireshark'

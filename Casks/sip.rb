@@ -1,10 +1,9 @@
 cask 'sip' do
-  version '1.0.7'
-  sha256 '65ad507c0120f53d957df43ec5473cf37ade020271fae1facd806a13afb98739'
+  version '1.1.3'
+  sha256 '3ea60d87c43669557733daa9abcaa34c08ef9ec205c1f4978312d2fa2720725c'
 
-  url 'http://sipapp.io/download/sip.dmg'
-  appcast 'http://sipapp.io/sparkle/sip.xml',
-          checkpoint: '23bbf3a6f4e1e91dfda14d078b31734d527cf73dbf2e5ee7e2c6e0f2fd693fc6'
+  url 'https://sipapp.io/download/sip.dmg'
+  appcast 'https://sipapp.io/sparkle/sip.xml'
   name 'Sip'
   homepage 'https://sipapp.io/'
 

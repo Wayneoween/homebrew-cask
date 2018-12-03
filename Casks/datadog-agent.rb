@@ -1,9 +1,9 @@
 cask 'datadog-agent' do
-  version '6.0.0-1'
-  sha256 'b2ea2660ea4ff8e1e43edc1546df73333fbec6cb58fd747f11028921bcc97d27'
+  version '6.1.2-1'
+  sha256 'e2399cc9ddbf9f2ffecd32b48698857d1fd23cd504bd3527f0bb73c94d83542f'
 
   # s3.amazonaws.com/dd-agent was verified as official when first introduced to the cask
-  url 'https://s3.amazonaws.com/dd-agent/datadogagent.dmg'
+  url "https://s3.amazonaws.com/dd-agent/datadog-agent-#{version}.dmg"
   name 'Datadog Agent'
   homepage 'https://www.datadoghq.com/'
 
@@ -19,7 +19,7 @@ cask 'datadog-agent' do
   zap trash: '/opt/datadog-agent'
 
   caveats <<~EOS
-    You will need to update /opt/datadog-agent/etc/datadog.conf and replace APIKEY with your api key
+    You will need to update /opt/datadog-agent/etc/datadog.yaml and replace APIKEY with your api key
 
     If you ever want to start/stop the Agent, please use the Datadog Agent App or datadog-agent command.
     It will start automatically at login, if you want to enable it at startup, run these commands:

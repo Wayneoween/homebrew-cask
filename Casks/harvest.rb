@@ -1,14 +1,14 @@
 cask 'harvest' do
-  version '2.1.3'
-  sha256 '0524300d7fe98035e71502833977025f2f7b63a5af726521b0acd7fed57cab70'
+  version '2.1.12'
+  sha256 '6345cb40c55ca6cf51d5086b511fc976836e5d1dbb49e9f71f5b15284aa91bbd'
 
   url "https://www.getharvest.com/harvest/mac/Harvest.#{version}.zip"
-  appcast 'https://www.getharvest.com/harvest/mac/appcast.xml',
-          checkpoint: '2c4dd52191c9334361a1e8e282ef8ca8037f12b613ee439072a0f47a139225ec'
+  appcast 'https://www.getharvest.com/harvest/mac/appcast.xml'
   name 'Harvest'
   homepage 'https://www.getharvest.com/mac-time-tracking'
 
   auto_updates true
+  depends_on macos: '>= :high_sierra'
 
   app 'Harvest.app'
 end

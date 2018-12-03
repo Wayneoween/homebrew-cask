@@ -1,10 +1,13 @@
 cask 'flinto' do
-  version '25.0'
-  sha256 'e325fc804d5744736dac7e27ac594130c5c9c75e9915ae04843f2225e69f926c'
+  version '26.1'
+  sha256 '1b0cdcc381ad6e2ba11cfd566dd3119d9476c46b9f6a3a8832d2e14efd36c969'
 
   url "https://www.flinto.com/assets/Flinto-#{version}.dmg"
+  appcast 'https://www.flinto.com/appcast.rss'
   name 'Flinto'
   homepage 'https://www.flinto.com/mac'
+
+  depends_on macos: '>= :sierra'
 
   app 'Flinto.app'
 

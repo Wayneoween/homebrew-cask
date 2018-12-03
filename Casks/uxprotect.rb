@@ -1,10 +1,9 @@
 cask 'uxprotect' do
-  version '1.1'
-  sha256 '89772d60ef2ade2ba4668f7517300962dc27c0feb530a21cdb6ee599bcfa468f'
+  version '1.1.1'
+  sha256 'e6a0472e35d04cf719e8841c813ff0e155550ab47d2e05c3a426a6815f05fbc2'
 
   url "https://digitasecurity.com/download/uxprotect/UXProtect#{version}.zip"
-  appcast 'https://digitasecurity.com/product/uxprotect/appcast.xml',
-          checkpoint: '9bc4de94f3d5376622742fd7020f47403c22b3dce6f7994e47a848751df44973'
+  appcast 'https://digitasecurity.com/product/uxprotect/appcast.xml'
   name 'UXProtect'
   homepage 'https://digitasecurity.com/product/uxprotect/'
 

@@ -1,8 +1,8 @@
 cask 'eclipse-java' do
-  version '4.7.2,oxygen:2'
-  sha256 '45ab1f3ab53cf457c723818e2198e1b5d82479f4e8c7539a018dfb2934268d7d'
+  version '4.9.0,2018-09:R'
+  sha256 '0b8f0fda62bdb89a249cda45400c53758a0886f4019042fc9a9d15ddc399fe8e'
 
-  url "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/#{version.after_comma.before_colon}/#{version.after_colon}/eclipse-java-#{version.after_comma.before_colon}-#{version.after_colon}-macosx-cocoa-x86_64.dmg&r=1"
+  url "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/#{version.after_comma.before_colon}/#{version.after_colon}/eclipse-java-#{version.after_comma.before_colon}-macosx-cocoa-x86_64.dmg&r=1"
   name 'Eclipse IDE for Java Developers'
   homepage 'https://eclipse.org/'
 
